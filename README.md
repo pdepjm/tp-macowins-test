@@ -35,4 +35,11 @@ Este comando hará lo siguiente:
  3. Detectará la presencia de (ciertos) code smells
  4. Validará la cobertura del proyecto
 
-Todo esto no significa que el TP esté bien (podría haber aún problemas de diseño, los tests podrían ser incorrectos, etc), pero al menos verifica que algunos requerimientos mínimos de funcionalidad y calidad estén cubiertos.
+# Entrega del proyecto
+
+Para entregar el proyecto, crear un tag llamado `entrega-final`. Es importante que antes de realizarlo se corra la validación
+explicada en el punto anterior. Se recomienda hacerlo de la siguiente forma:
+
+```
+mvn verify && git tag entrega-final && git push origin HEAD --tags
+```
